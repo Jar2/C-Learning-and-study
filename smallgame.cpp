@@ -1,4 +1,4 @@
-#include <iostream>
+#nclude <iostream>
 #include <string>
 #include <cstdlib>
 using namespace std;
@@ -26,26 +26,22 @@ int locations()
 	{
 	//	cout << "using the goto statement!\n";
 	//	cout << "Welcome to this place! please expolore now!\n";
-ForestLocal:
 	};
 
 	struct Plains
 	{
 	//	cout << "using the goto statement!\n";
 	//	cout << "Welcome to this place! please expolore now!\n";
-PlainsLocal:
 	};
 	struct Desert
 	{
 	//	cout << "using the goto statement!\n";
 	//	cout << "Welcome to this place! please expolore now!\n";
-DesertLocal:
 	};
 	struct Beach
 	{
 	//	cout << "using the goto statement!\n";
 	//	cout << "Welcome to this place! please expolore now!\n";
-BeachLocal:
 	};
 }
 
@@ -68,20 +64,16 @@ BeachLocal:
 
 		case 'D':
 			cout << "You are now in the desert! welcome! " << endl;
-			goto DesertLocal;
 			break;
 		case 'F':
 			cout << "welcome to the forest! " << endl;
-			goto ForestLocal;
 			break;
 
 		case 'P':
 			cout << "wlecome to the plains" << endl;
-			goto PlainsLocal;
 			break;
 		case 'B':
 			cout << "wlecome to the beach" << endl;
-			goto BeachLocal;
 			break;
 		}
 	}
