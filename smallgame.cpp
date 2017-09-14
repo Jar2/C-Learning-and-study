@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 #include <cstdio>
 using namespace std;
 /*
@@ -108,8 +107,35 @@ int main()
 	/*
 	 * MAKE AN INVENTORY SYSTEM!!!!
 	 */
+	class inventory
+	{
+		public:
+			int inventWidth;
+			int inventHeight;
+			int inventSize;
+			void printInvent()
+			{
+
+			}
+			// code here
+	};
+
+	//The initializer of the inventory space!
+	inventory inventory1;
+	double volume = 0.0;
+	inventory1.inventHeight = 10;
+	inventory1.inventWidth = 10;
+	
+	volume = inventory1.inventWidth + inventory1.inventHeight;
+	// of the the inventory system
+	//
+	// Item pick up system it will use the inventory.
+	//
+	// //TODO
+	//
+
 	// about the player or what ever!
-	string mystr; // you need the string there to enter in someones name aka MisterJar
+	string mystr;  //you need the string there to enter in someones name aka MisterJar
 	cout << "Welcome to the game, Press any key to continue: " << endl;
 	// the game what is the players name is going to be;
 	cout << "what is your name: ";
