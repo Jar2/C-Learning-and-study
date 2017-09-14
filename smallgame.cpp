@@ -14,7 +14,8 @@ using namespace std;
 //
 //make a simple
 //
-int main()
+//
+int locations()
 {
 	// make the items that the forest is going to use! like whatever!
 	struct Village
@@ -103,8 +104,21 @@ int main()
 	// I think i should make them their own class and functions
 	//
 	// TODO
+}
+int player()
+{
+	// about the player or what ever!
+	string mystr;  //you need the string there to enter in someones name aka MisterJar
+	cout << "Welcome to the game, Press any key to continue: " << endl;
+	// the game what is the players name is going to be;
+	cout << "what is your name: ";
+	getline(cin, mystr);
+	cout << "Hello " << mystr << endl;
+}
 
-	/*
+int inventorySystem()
+{
+/*
 	 * MAKE AN INVENTORY SYSTEM!!!!
 	 */
 	class inventory
@@ -113,6 +127,7 @@ int main()
 			int inventWidth;
 			int inventHeight;
 			int inventSize;
+			int inventSort;
 			void printInvent()
 			{
 
@@ -130,24 +145,17 @@ int main()
 	// of the the inventory system
 	//
 	// Item pick up system it will use the inventory.
-	//
-	// //TODO
-	//
 
-	// about the player or what ever!
-	string mystr;  //you need the string there to enter in someones name aka MisterJar
-	cout << "Welcome to the game, Press any key to continue: " << endl;
-	// the game what is the players name is going to be;
-	cout << "what is your name: ";
-	getline(cin, mystr);
-	cout << "Hello " << mystr << endl;
+}
 
-/*This is the game loop where the game can run until infinty!!!!!*/
+int main()
+{
+
+
 	bool running = true;
 
 	while(running)
 	{
-
 
 		{
 		
@@ -158,12 +166,12 @@ int main()
 		switch(placestogo) 
 			{
 
-			// this is going to quit the game!
 		case 'X':
+			// this is going to quit the game!
 			running = false; 
 			break;
-			// This is going to make the player go to the desert!
 		case 'D':
+			// This is going to make the player go to the desert!
 			cout << "You are now in the desert! welcome! " << endl;
 			break;
 		case 'F':
