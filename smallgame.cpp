@@ -105,6 +105,36 @@ int locations()
 	//
 	// TODO
 }
+int rooms()
+{
+	class office
+	{
+		public:
+			//TODO
+	};
+	// add more if you want like stuff that youll fine in the game.
+	class store
+	{
+		public:
+			//TODO
+	};
+	class downedPlane
+	{
+		public:
+			//TODO
+	};
+	class gameDevShack
+	{
+		public:
+			//TODO
+	};
+	class playersShack
+	{
+		public:
+			//TODO
+	};
+
+}
 int player()
 {
 	// about the player or what ever!
@@ -150,6 +180,7 @@ int inventorySystem()
 
 int main()
 {
+	player();
 
 
 	bool running = true;
