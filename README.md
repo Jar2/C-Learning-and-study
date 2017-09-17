@@ -4,6 +4,5 @@ This is going to be my repository where i can learn C++ and if theres any proble
 
 Also to compile the program you need to write this into the command line;
 
-g++ -o textgame -I headers/(wildstar).h smallgame.cpp
-
-the wildstar is the '*'
+g++ -o textgame -I headers/ smallgame.cpp
+this will make the game compile.. hopefully

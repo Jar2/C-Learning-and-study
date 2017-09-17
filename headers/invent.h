@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#ifdef INVENT_H
+#ifndef INVENT_H
 #define INVENT_H
 int inventorySystem()
 {

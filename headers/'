@@ -1,0 +1,65 @@
+#include <iostream>
+using namespace std;
+#ifndef ROOM_H
+#define ROOM_H
+string mystr;
+string descriptions;
+int testStack()
+{
+	std::stack<int> rooms;
+	
+	rooms.push(20);
+	cout << rooms.size() << " size of rooms" << endl;
+	cout << rooms.top() << endl;
+	rooms.pop();
+}
+class Rooms
+{
+
+	public:
+		void printDesc()
+		{
+			//TODO
+		}
+		void waitKey()
+		{
+			//TODO
+		}
+		void exit(int exit_id)
+		{
+			//TODO
+		}
+
+};
+
+
+
+// The classes for something yeah
+class office
+{
+	public:
+		int officespullies;
+		void OfficePrint()
+		{
+			cout << "Welcome to the office! " << mystr << endl;
+		}
+
+};
+	// add more if you want like stuff that youll fine in the game.
+class store
+{
+	public:
+};
+class downedPlane
+{
+	public:
+};
+class gameDevShack
+{
+	public:
+};
+class playersShack
+{
+	public:
+};
+#endif

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-#ifdef LOCATIONS_H
-#define LOCATIONS_H;
+#ifndef LOCATIONS_H
+#define LOCATIONS_H
 int locations()
 {
 	// make the items that the forest is going to use! like whatever!
