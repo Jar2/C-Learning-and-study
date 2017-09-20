@@ -17,41 +17,47 @@ using namespace std;
  * the move commands and the description of said landscapes thus so it can be a
  * nice little game with nice little stuff.
  */
-//make a simple
-/*
-class arrayStack
-{
-	public:
-		void push()
-		{
-		}
-		void pop()
-		{
-		}
-	
-};
-*/
-int main()
-{
 	// Call the Rooms class in the rooms.h file
 	// and too call it you just write the classes name and a subname like Rooms area; simple
-	stack<int> stacks;
-
-	cout << "poping the rooms!\n";
-
-	while(!stacks.empty())
+	// How to make a stack.
+	// 1. make the stack.
+	// 2. if the player wants to go to a room. make that room ontop of the stack
+	// 3. when the room ontop of the stack is finished. top it off the stack.
+	// 4 Rinse and repeat
+class Stack : public Rooms
+{
+	public:
+	int roomStack()
 	{
-		cout << ' ' << stacks.top();
+		stack<int> stacks;
+		// make the stack or the rooms
+		Rooms areas; // call the class.... i dont know if i am doing it right 
+		stacks.push(areas.StorePrint());
+		stacks.push(areas.DownedPlanePNT());
+		stacks.push(areas.gameDevShackPNT());
+		stacks.push(areas.playersShackPNT());
+		stacks.push(areas.OfficePrint());
+		//Make the player move around the place and shit like that so the stack can fucking work!
+		// I think with the area.top(); function? I have no idea.
+		cout << "the space on the stack: " << stacks.size() << endl;
+		cout << "Top room: " << stacks.top() << endl;
+
 		stacks.pop();
+
+		cout << "Top element: " << stacks.top() << endl;
+
 	}
-	
+};
+int main()
+{
+	Stack rooms;
 	bool running = true;
 
 	while(running)
 	{
 
 		{
-
+			cout << rooms.roomStack() << endl;
 		cout << "Where do you want to go? there are, D, B, P, F\n";
 		char placestogo;
 	 
@@ -79,9 +85,9 @@ int main()
 			// This is going to make the player go to the beach!
 			cout << "wlecome to the beach" << endl;
 			break;
-		case 'O':
+		case 'L':
 			break;
-
+				rooms.roomStack();
 			}
 		}
 	}

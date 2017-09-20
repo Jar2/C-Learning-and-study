@@ -27,27 +27,26 @@ class Rooms
 		// the real rooms now!!! TODO
 
 		int officespullies;
-		void OfficePrint()
+		int OfficePrint()
 		{
 			cout << "Welcome to the office! " << mystr << endl;
 		}
 
 		// add more if you want like stuff that youll fine in the game.
-		void StorePrint()
+		int StorePrint()
 		{
 
 			cout << "Welcome to the store! " << mystr << endl;
 		}
-		void DownedPlanePNT()
+		int DownedPlanePNT()
 		{
 			cout << "Welcome to the store! " << mystr << endl;
 		}
-
-		void gameDevShackPNT()
+		int gameDevShackPNT()
 		{
 			cout << "Welcome to the store! " << mystr << endl;
 		}
-		void playersShackPNT()
+		int playersShackPNT()
 		{
 			cout << "Welcome to the store! " << mystr << endl;
 		}
